@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="343.0" prefWidth="370.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.1" fx:controller="AppLogin.AppLoginController">
+    <stylesheets>
+        <URL value="@applogin.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="18.0" layoutY="46.0" prefHeight="17.0" prefWidth="65.0" text="DB Status" />
+      <TitledPane animated="false" prefHeight="2.0" prefWidth="370.0" text="Database Login">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </TitledPane>
+      <Label fx:id="Status" layoutX="109.0" layoutY="47.0" prefHeight="17.0" prefWidth="173.0" text="Database Is Connected" />
+      <Label layoutX="19.0" layoutY="96.0" prefHeight="17.0" prefWidth="81.0" text="UserName" textFill="#2f2a2a">
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="107.0" layoutY="92.0" prefHeight="25.0" prefWidth="173.0" promptText="Username" />
+      <Label layoutX="20.0" layoutY="135.0" prefHeight="17.0" prefWidth="72.0" text="Password">
+         <font>
+            <Font name="Verdana" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combobox" layoutX="107.0" layoutY="173.0" prefHeight="25.0" prefWidth="173.0" promptText="Admin/Student" />
+      <Button fx:id="loginbutton" layoutX="142.0" layoutY="217.0" mnemonicParsing="false" onAction="#Login" prefHeight="25.0" prefWidth="81.0" text="Login" />
+      <PasswordField fx:id="password" layoutX="108.0" layoutY="131.0" prefHeight="25.0" prefWidth="173.0" promptText="Password" />
+      <Label fx:id="loginStatus" layoutX="92.0" layoutY="263.0" prefHeight="17.0" prefWidth="216.0" textFill="#5a7c33">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="560.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Update.UpdateController">
+    <stylesheets>
+        <URL value="@update.css" />
+    </stylesheets>
+   <children>
+      <TitledPane alignment="TOP_CENTER" prefHeight="9.0" prefWidth="560.0" text="Update Details" textFill="#394072">
+         <font>
+            <Font name="Verdana Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_update_file_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </TitledPane>
+      <AnchorPane layoutY="28.0" prefHeight="373.0" prefWidth="155.0">
+         <children>
+            <ImageView fitHeight="89.0" fitWidth="100.0" layoutX="31.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8_user_96px_3.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="31.0" layoutY="175.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #3481ba;" text="Change Photo" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="175.0" layoutY="64.0" prefHeight="21.0" prefWidth="80.0" text="First Name" textFill="#834747">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="285.0" layoutY="62.0" prefHeight="25.0" prefWidth="217.0" promptText="First Name" />
+      <Label layoutX="175.0" layoutY="94.0" prefHeight="21.0" prefWidth="80.0" text="Last Name" textFill="#834747">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="285.0" layoutY="92.0" prefHeight="25.0" prefWidth="217.0" promptText="Last Name" />
+      <Label layoutX="175.0" layoutY="124.0" prefHeight="21.0" prefWidth="80.0" text="Address" textFill="#834747">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="285.0" layoutY="122.0" prefHeight="25.0" prefWidth="217.0" promptText="Address" />
+      <Label layoutX="175.0" layoutY="154.0" prefHeight="21.0" prefWidth="80.0" text="E-mail" textFill="#834747">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="285.0" layoutY="152.0" prefHeight="25.0" prefWidth="217.0" promptText="E-mail" />
+      <Label layoutX="175.0" layoutY="184.0" prefHeight="21.0" prefWidth="89.0" text="Father's Name" textFill="#834747">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="285.0" layoutY="182.0" prefHeight="25.0" prefWidth="217.0" promptText="Father's name" />
+      <Label layoutX="175.0" layoutY="214.0" prefHeight="21.0" prefWidth="89.0" text="Mother's Name" textFill="#834747">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="285.0" layoutY="212.0" prefHeight="25.0" prefWidth="217.0" promptText="Mother's name" />
+      <Label layoutX="175.0" layoutY="244.0" prefHeight="21.0" prefWidth="80.0" text="DOB" textFill="#834747">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="285.0" layoutY="242.0" prefHeight="25.0" prefWidth="217.0" promptText="Dob" />
+      <Label layoutX="175.0" layoutY="274.0" prefHeight="21.0" prefWidth="80.0" text="DOJ" textFill="#834747">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="285.0" layoutY="272.0" prefHeight="25.0" prefWidth="217.0" promptText="Doj" />
+      <Label layoutX="175.0" layoutY="302.0" prefHeight="21.0" prefWidth="80.0" text="Phone No." textFill="#834747">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField layoutX="285.0" layoutY="300.0" prefHeight="25.0" prefWidth="217.0" promptText="Phone No." />
+      <Button layoutX="252.0" layoutY="350.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" style="-fx-background-color: #3481ba;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
